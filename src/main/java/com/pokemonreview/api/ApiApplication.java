@@ -37,7 +37,7 @@ public class ApiApplication {
 				new Role(1, "USER"),
 				new Role(2, "ADMIN")
 		).collect(Collectors.toList());
-		
+
 		List<Role> rolesSaved = repository.saveAll(roles);
 
 		UserEntity userEntity = new UserEntity(0, "Luis Diaz", "luis@gmail.com", passwordEncoder.encode("password123"), null, new Date(), new Date(), null, phones) ;
