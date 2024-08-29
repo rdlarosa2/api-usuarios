@@ -8,6 +8,7 @@ import com.pokemonreview.api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.annotation.PostConstruct;
@@ -24,11 +25,10 @@ public class ApiApplication {
 	private RoleRepository repository;
 	@Autowired
 	private UserRepository userRepository;
-	@Autowired
-	private PasswordEncoder passwordEncoder;
 
 	@PostConstruct
 	public void initUsers() {
+		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		List<Phone> phones = new ArrayList<Phone>() ;
 		Phone phone = new Phone(0, "1234567", "111111", "57", null);
 		phones.add(phone);
@@ -37,8 +37,7 @@ public class ApiApplication {
 				new Role(1, "USER"),
 				new Role(2, "ADMIN")
 		).collect(Collectors.toList());
-
-
+		
 		List<Role> rolesSaved = repository.saveAll(roles);
 
 		UserEntity userEntity = new UserEntity(0, "Luis Diaz", "luis@gmail.com", passwordEncoder.encode("password123"), null, new Date(), new Date(), null, phones) ;
@@ -48,7 +47,6 @@ public class ApiApplication {
 		phone.setUserEntity(userEntity);
 
 		UserEntity savedUserEntity = userRepository.save(userEntity);
-		System.out.println("id >>" + savedUserEntity.getId());
 	}
 
 	public static void main(String[] args) {

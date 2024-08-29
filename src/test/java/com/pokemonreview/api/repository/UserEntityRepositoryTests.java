@@ -61,7 +61,7 @@ public class UserEntityRepositoryTests {
         UserEntity savedUserEntity2 = this.userRepository.save(userEntity2);
         List<UserEntity> list = this.userRepository.findAll();
         Assertions.assertThat(list).isNotNull();
-        Assertions.assertThat(list.size()).isEqualTo(2);
+        Assertions.assertThat(list.size()).isEqualTo(3);
     }
 
     @Test
