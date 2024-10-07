@@ -7,6 +7,6 @@ These components must be configured to execute from the command line.
 
 [2] The next goal is to execute this API from the command line.  
 [2.a] Create the folder where the source code will be located. For instance, I will create the folder C:\wspace . 
-To create this folder I execute the 'Command Prompt' application with the command: mkdir C:\wspace
+To create this folder I execute the 'Command Prompt' application with the command: <b>mkdir C:\wspace </b><br>
 [2.b] Make that the current folder be the folder just created. In my case, I will execute the command: cd C:\wspace
 [2.c] Clone the directory of the project in the current directory with the command: git clone https://github.com/rdlarosa2/api-usuarios.git      
