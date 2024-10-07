@@ -1,5 +1,5 @@
 # api-usuarios
-<b>RESTful API Usuarios con JWT</b><p>
+<b>RESTful API Usuarios con JWT</b>
 This instructions are to execute this API in a Windows 10 or Windows 11 Operating System.   
 
 [1] The software that must be installed to run this API is: java jdk version 17, git (apache-maven-3.9.6) and git (version 2.45.0.windows.1).
@@ -11,4 +11,5 @@ To create this folder I execute the 'Command Prompt' application with the comman
 
 [2.b] Make that the current folder be the folder just created. In my case, I will execute the command: <b>cd C:\wspace</b>
 
-[2.c] Clone the directory of the project in the current directory with the command: git clone https://github.com/rdlarosa2/api-usuarios.git      
+[2.c] Clone the directory of the project in the current directory with the command: <br> 
+<b>git clone https://github.com/rdlarosa2/api-usuarios.git </b>      
