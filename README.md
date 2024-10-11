@@ -15,7 +15,7 @@ The software that must be installed to run this API is:
 
 These components must be configured to execute from the command line. 
 
-<b>Enable the API</b>
+<b>Enabling the API</b>
 
 
 [1] The next goal is to enable the API from the command line.
