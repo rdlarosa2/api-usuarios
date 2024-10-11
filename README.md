@@ -45,6 +45,10 @@ To create this folder I execute the 'Command Prompt' application with the comman
    
 <table>
   <tr>
+    <th>Field</th>
+    <th>Value</th>
+  </tr>
+  <tr>
     <th><b>Name of Request</b></th>
     <th>login</th>
   </tr>
