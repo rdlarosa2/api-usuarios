@@ -1,4 +1,20 @@
 # api-usuarios
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+
 <b>RESTful API Usuarios con JWT</b>
 
 This instructions are to execute this API in a Windows 10 or Windows 11 Operating System.   
