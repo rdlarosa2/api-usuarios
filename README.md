@@ -43,5 +43,21 @@ To create this folder I execute the 'Command Prompt' application with the comman
 
 [3.b] Right clic on <b>api usuarios</b> then clic on the option <b>Add request</b>. Then rename the request from <b>New request</b> to <b>login</b>.   
    
-
-
+<table>
+  <tr>
+    <th><b>Name of Request</b></th>
+    <th>login</th>
+  </tr>
+  <tr>
+    <th><b>URL</b></th>
+    <th>http://localhost:8080/api/auth/login</th>
+  </tr>
+  <tr>
+    <th><b>Authorization -> Auth Type</b></th>
+    <th>Inherit auth from parent</th>
+  </tr> 
+  <tr>
+    <th><b>Body –> raw –> JSON</b></th>
+    <th>Inherit auth from parent</th>
+  </tr>   
+</table>
