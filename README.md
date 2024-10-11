@@ -1,19 +1,4 @@
 # api-usuarios
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #D6EEEE;
-}
-</style>
 
 <b>RESTful API Usuarios con JWT</b>
 
@@ -65,7 +50,8 @@ To create this folder I execute the 'Command Prompt' application with the comman
     <th>Value</th>
   </tr>
   <tr>
-    <th><b>Name of Request</b></th>
+    <th><b>
+	Name of Request</b></th>
     <th>login</th>
   </tr>
   <tr>
