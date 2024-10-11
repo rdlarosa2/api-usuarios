@@ -3,7 +3,14 @@
 
 This instructions are to execute this API in a Windows 10 or Windows 11 Operating System.   
 
-[1] The software that must be installed to run this API is: java jdk version 17, git (apache-maven-3.9.6) and git (version 2.45.0.windows.1).
+[1] The software that must be installed to run this API is: 
+
+<ul>
+  <li>java jdk version 17</li>
+  <li>maven (apache-maven-3.9.6)</li>
+  <li>git (version 2.45.0.windows.1)</li>
+</ul>
+
 These components must be configured to execute from the command line. 
 
 [2] The next goal is to execute this API from the command line.  
@@ -20,6 +27,14 @@ To create this folder I execute the 'Command Prompt' application with the comman
 [2.e] To compile the project, please execute the command: <b>mvn install</b>   
 
 [2.f] To execute the project, please execute the command: <b>mvn spring-boot:run</b>
+
+[3] Install the Postman App from https://www.postman.com/downloads/
+
+[4] Define a new collection and a set of requests to test endpoints.
+
+[4.a] Add a new <b>Blank collection</b> and name it with <b>api-usuarios</b>
+
+[4.b] Right clic on <b>api usuarios</b> then clic on the option <b>Add request</b>. Then rename the request from <b>New request</b> to <b>login</b>.   
    
 
 
