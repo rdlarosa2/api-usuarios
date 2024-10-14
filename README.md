@@ -4,7 +4,7 @@
 
 This instructions are to execute this API in a Windows 10 or Windows 11 Operating System.   
 
-# Prerequistes
+# Prerequisites
 
 The software that must be installed to run this API is: 
 
