@@ -27,7 +27,7 @@ To create this folder I execute the 'Command Prompt' application with the comman
 
 1c. Clone the directory of the project in the current directory with the command: <br> 
 
-    ```batch
+    ```
     git clone https://github.com/rdlarosa2/api-usuarios.git 
     ```  
 
