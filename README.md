@@ -65,6 +65,11 @@ git clone https://github.com/rdlarosa2/api-usuarios.git
   </tr> 
   <tr>
     <th><b>Body –> raw –> JSON</b></th>
-    <th>Inherit auth from parent</th>
+    <th>
+{
+    "username": "luis@gmail.com" ,
+    "password": "password123"
+} 	
+	</th>
   </tr>   
 </table>
