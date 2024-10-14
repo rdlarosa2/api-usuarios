@@ -4,7 +4,7 @@
 
 This instructions are to execute this API in a Windows 10 or Windows 11 Operating System.   
 
-# Prerequisites
+## Prerequisites
 
 The software that must be installed to run this API is: 
 
@@ -16,7 +16,7 @@ The software that must be installed to run this API is:
 
 These components must be configured to execute from the command line. 
 
-# Building
+## Building
 
 1. The next goal is to build the API from the command line.
 
