@@ -58,6 +58,11 @@ public class UserRestController {
         return userService.findById(id);
     }
 
+    @GetMapping("/users/name={name}")
+    public List<UserEntityResponseDto> findByName(@PathVariable String name) {
+        return userService.findByName(name);
+    }
+
     @ExceptionHandler
     public ResponseEntity<UserErrorResponse> handleException(CreatingUserWithExistentEmailException exc) {
         UserErrorResponse error = new UserErrorResponse(exc.getMessage());

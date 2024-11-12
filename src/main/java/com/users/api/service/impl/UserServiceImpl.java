@@ -55,6 +55,20 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<UserEntityResponseDto> findByName(String username) {
+        List<UserEntity> list = this.userRepository.findByName(username);
+        List<UserEntityResponseDto> listDto = new ArrayList<UserEntityResponseDto>();
+        UserEntityResponseDto userEntityResponseDto = null;
+
+        for (UserEntity userEntity: list) {
+            userEntityResponseDto = new UserEntityResponseDto(userEntity);
+            listDto.add(userEntityResponseDto);
+        }
+
+        return listDto;
+    }
+
+    @Override
     public UserEntityResponseDto save(UserEntityDto theUser) {
         List<Phone> phones = null ;
         if ( userRepository.existsByEmail(theUser.getEmail()) ) {
