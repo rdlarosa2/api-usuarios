@@ -15,6 +15,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/*
+@Author Ricardo De la Rosa
+*/
 @RestController
 @RequestMapping("/api")
 public class UserRestController {
